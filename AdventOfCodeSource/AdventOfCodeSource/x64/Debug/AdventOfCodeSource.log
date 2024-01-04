@@ -1,0 +1,12 @@
+﻿  AdventOfCodeSource.cpp
+  aocFunctions.cpp
+  dayOne.cpp
+C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\AdventOfCodeSource\dayOne.cpp(87,62): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\AdventOfCodeSource\dayOne.cpp(92,63): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\AdventOfCodeSource\dayOne.cpp(125,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  dayThree.cpp
+C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\AdventOfCodeSource\dayThree.cpp(14,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\AdventOfCodeSource\dayThree.cpp(14,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  dayTwo.cpp
+  Generating Code...
+  AdventOfCodeSource.vcxproj -> C:\Users\varun\Desktop\Projects\Coding Challenges\AdventOfCode2023\AdventOfCodeSource\x64\Debug\AdventOfCodeSource.exe
