@@ -13,6 +13,7 @@ int numberOfLines(std::ifstream& inputFile);
 
 // Day 3
 bool isThereAPart(std::vector<std::string> schematic, int height, int width, int maxHeight, int maxWidth);
+std::vector<int> adjacentPartNumbers(std::vector<std::string> schematic, int height, int width, int maxHeight, int maxWidth);
 
 
 #endif ADVENT_OF_CODE_FUNCTIONS

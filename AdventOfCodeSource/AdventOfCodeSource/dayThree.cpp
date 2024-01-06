@@ -60,5 +60,47 @@ void dayThreeFunction() {
 	std::cout << "Sum of all part numbers: " << sumOfPartNumbers << std::endl;
 
 
+	// Strategy for Part 2:
+	// If a number is to the right or left of '*', that counts as one number always
+	// If a number is directly to the bottom or top, that will always also count as one number always
+	// If there is no number directly to the top or bottom, then each of the diagonls count as one additional number
+	widthCounter = 0, heightCounter = 0;
 
+
+	// std::cout << "2: " << adjacentPartNumbers(lines, 102, 51, height, width) << std::endl;
+
+
+	std::vector<int> tempStore;
+	int gearRatioSum = 0; 
+	tempNum = 1;
+
+	while (heightCounter < height) {
+		while (widthCounter < width) {
+			if (lines[heightCounter][widthCounter] != '*') {
+				widthCounter++;
+			}
+			else {
+				tempStore = adjacentPartNumbers(lines, heightCounter, widthCounter, height, width);
+				if (tempStore[0] == 2) {
+					for (int u = 1; u < 9; u++) {
+						if (tempStore[u] != 0) {
+							tempNum *= tempStore[u];
+						}
+					}
+					gearRatioSum += tempNum;
+					tempNum = 1;
+				}
+
+
+				widthCounter++;
+			}
+
+
+		}
+		widthCounter = 0; heightCounter++;
+
+	}
+
+	std::cout << "Sum of all valid gear ratios: " << gearRatioSum << std::endl;
+	
 }
